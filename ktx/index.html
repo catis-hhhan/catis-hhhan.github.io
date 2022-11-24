@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KTX 셔틀 시간표</title>
+	<link rel="icon" href="/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="/assets/debug.css">
+	<style>
+	</style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="/assets/main.js"></script>
+</head>
+<body>
+    <div id="main-content" style="padding: 20px;">
+
+<style>
+#ktx .st1 { color: brown; }
+#ktx .st6 { color: navy; }
+#ktx .st4 { color: black; }
+#ktx .st7 { color: darkgreen; }
+#ktx th { padding: inherit 0; }
+#ktx th { color: #fff; background-color: #333; }
+#ktx th.st1 { color: #fff; background-color: brown; }
+#ktx th.st4 { color: #fff; background-color: black; }
+#ktx th.st6 { color: #fff; background-color: navy; }
+#ktx th.st7 { color: #fff; background-color: darkgreen; }
+
+@media (max-width: 576px) {
+	#ktx .st2,
+	#ktx .st3,
+	#ktx .st5 { display: none; }
+}
+</style>
+
+<center>
+<div style="max-width: 560px;">
+
+	<div class="ui secondary pointinag_ tabular menu">
+			<a class="item" data-tab="daytype1">평일</a>
+			<a class="item" data-tab="daytype2">주말</a>
+			<div class="right menu">
+			<div class="item">2021.01.05 기준</div>
+		</div>
+	</div>
+	
+	<div class="segment">
+			<div class="ui tab" data-tab="daytype1">
+
+			<div class="ui top attached two item tabular menu">
+							<a class="item" data-tab="fromto1">광명역->영등포</a>
+							<a class="item" data-tab="fromto2">영등포->광명역</a>
+						</div>
+
+			<div class="ui bottom attached segment">
+							<div class="ui tab" data-tab="fromto1">
+															<table id="ktx" class="ui unstackable striped very compact selectable table center aligned seven column">
+						<tr class="" style="font-size: smaller;">
+														<th class="st1">광명역</th>
+														<th class="st2">금천구청</th>
+														<th class="st3">독산</th>
+														<th class="st4">가산디지털</th>
+														<th class="st5">구로</th>
+														<th class="st6">신도림</th>
+														<th class="st7">영등포</th>
+													</tr>
+												<tr>
+														<td class="st1">05:32:00</td>
+														<td class="st2">05:34:30</td>
+														<td class="st3">05:36:30</td>
+														<td class="st4">05:41:00</td>
+														<td class="st5">05:43:30</td>
+														<td class="st6">05:46:00</td>
+														<td class="st7">05:51:00</td>
+													</tr>
+												<tr>
+														<td class="st1">06:15:00</td>
+														<td class="st2">06:17:30</td>
+														<td class="st3">06:19:30</td>
+														<td class="st4">06:24:00</td>
+														<td class="st5">06:26:30</td>
+														<td class="st6">06:29:00</td>
+														<td class="st7">06:34:00</td>
+													</tr>
+												<tr>
+														<td class="st1">07:13:00</td>
+														<td class="st2">07:15:30</td>
+														<td class="st3">07:17:30</td>
+														<td class="st4">07:22:00</td>
+														<td class="st5">07:24:30</td>
+														<td class="st6">07:27:00</td>
+														<td class="st7">07:32:00</td>
+													</tr>
+												<tr>
+														<td class="st1">08:26:00</td>
+														<td class="st2">08:28:30</td>
+														<td class="st3">08:30:30</td>
+														<td class="st4">08:35:00</td>
+														<td class="st5">08:37:30</td>
+														<td class="st6">08:40:00</td>
+														<td class="st7">08:45:00</td>
+													</tr>
+												<tr>
+														<td class="st1">09:12:00</td>
+														<td class="st2">09:14:30</td>
+														<td class="st3">09:16:30</td>
+														<td class="st4">09:21:00</td>
+														<td class="st5">09:23:30</td>
+														<td class="st6">09:26:00</td>
+														<td class="st7">09:31:00</td>
+													</tr>
+												<tr>
+														<td class="st1">10:10:00</td>
+														<td class="st2">10:12:30</td>
+														<td class="st3">10:14:30</td>
+														<td class="st4">10:19:00</td>
+														<td class="st5">10:21:30</td>
+														<td class="st6">10:24:00</td>
+														<td class="st7">10:29:00</td>
+													</tr>
+												<tr>
+														<td class="st1">11:03:00</td>
+														<td class="st2">11:05:30</td>
+														<td class="st3">11:07:30</td>
+														<td class="st4">11:12:00</td>
+														<td class="st5">11:14:30</td>
+														<td class="st6">11:17:00</td>
+														<td class="st7">11:22:00</td>
+													</tr>
+												<tr>
+														<td class="st1">11:50:00</td>
+														<td class="st2">11:52:30</td>
+														<td class="st3">11:54:30</td>
+														<td class="st4">11:59:00</td>
+														<td class="st5">12:01:30</td>
+														<td class="st6">12:04:00</td>
+														<td class="st7">12:09:00</td>
+													</tr>
+												<tr>
+														<td class="st1">12:32:00</td>
+														<td class="st2">12:34:30</td>
+														<td class="st3">12:36:30</td>
+														<td class="st4">12:41:00</td>
+														<td class="st5">12:43:30</td>
+														<td class="st6">12:46:00</td>
+														<td class="st7">12:51:00</td>
+													</tr>
+												<tr>
+														<td class="st1">13:44:00</td>
+														<td class="st2">13:46:30</td>
+														<td class="st3">13:48:30</td>
+														<td class="st4">13:53:00</td>
+														<td class="st5">13:55:30</td>
+														<td class="st6">13:58:00</td>
+														<td class="st7">14:03:00</td>
+													</tr>
+												<tr>
+														<td class="st1">14:22:00</td>
+														<td class="st2">14:24:30</td>
+														<td class="st3">14:27:00</td>
+														<td class="st4">14:31:30</td>
+														<td class="st5">14:34:00</td>
+														<td class="st6">14:36:30</td>
+														<td class="st7">14:41:30</td>
+													</tr>
+												<tr>
+														<td class="st1">15:03:00</td>
+														<td class="st2">15:05:30</td>
+														<td class="st3">15:07:30</td>
+														<td class="st4">15:12:00</td>
+														<td class="st5">15:14:30</td>
+														<td class="st6">15:17:00</td>
+														<td class="st7">15:22:00</td>
+													</tr>
+												<tr>
+														<td class="st1">16:10:00</td>
+														<td class="st2">16:12:30</td>
+														<td class="st3">16:14:30</td>
+														<td class="st4">16:19:00</td>
+														<td class="st5">16:21:30</td>
+														<td class="st6">16:24:00</td>
+														<td class="st7">16:29:00</td>
+													</tr>
+												<tr>
+														<td class="st1">17:02:00</td>
+														<td class="st2">17:04:30</td>
+														<td class="st3">17:06:30</td>
+														<td class="st4">17:11:00</td>
+														<td class="st5">17:13:30</td>
+														<td class="st6">17:16:00</td>
+														<td class="st7">17:21:00</td>
+													</tr>
+												<tr>
+														<td class="st1">18:20:00</td>
+														<td class="st2">18:22:30</td>
+														<td class="st3">18:24:30</td>
+														<td class="st4">18:29:00</td>
+														<td class="st5">18:31:30</td>
+														<td class="st6">18:34:00</td>
+														<td class="st7">18:39:00</td>
+													</tr>
+												<tr>
+														<td class="st1">19:10:00</td>
+														<td class="st2">19:12:30</td>
+														<td class="st3">19:14:30</td>
+														<td class="st4">19:19:00</td>
+														<td class="st5">19:21:30</td>
+														<td class="st6">19:24:00</td>
+														<td class="st7">19:29:00</td>
+													</tr>
+												<tr>
+														<td class="st1">20:04:00</td>
+														<td class="st2">20:06:30</td>
+														<td class="st3">20:08:30</td>
+														<td class="st4">20:13:00</td>
+														<td class="st5">20:15:30</td>
+														<td class="st6">20:18:00</td>
+														<td class="st7">20:23:00</td>
+													</tr>
+												<tr>
+														<td class="st1">20:41:00</td>
+														<td class="st2">20:43:30</td>
+														<td class="st3">20:45:30</td>
+														<td class="st4">20:50:00</td>
+														<td class="st5">20:52:30</td>
+														<td class="st6">20:55:00</td>
+														<td class="st7">21:00:00</td>
+													</tr>
+												<tr>
+														<td class="st1">21:49:00</td>
+														<td class="st2">21:51:30</td>
+														<td class="st3">21:53:30</td>
+														<td class="st4">21:58:00</td>
+														<td class="st5">22:00:30</td>
+														<td class="st6">22:03:00</td>
+														<td class="st7">22:08:00</td>
+													</tr>
+												<tr>
+														<td class="st1">22:40:00</td>
+														<td class="st2">22:42:30</td>
+														<td class="st3">22:44:30</td>
+														<td class="st4">22:49:00</td>
+														<td class="st5">22:51:30</td>
+														<td class="st6">22:54:00</td>
+														<td class="st7">22:59:00</td>
+													</tr>
+											</table>
+				</div>
+							<div class="ui tab" data-tab="fromto2">
+															<table id="ktx" class="ui unstackable striped very compact selectable table center aligned seven column">
+						<tr class="" style="font-size: smaller;">
+														<th class="st7">영등포</th>
+														<th class="st6">신도림</th>
+														<th class="st5">구로</th>
+														<th class="st4">가산디지털</th>
+														<th class="st3">독산</th>
+														<th class="st2">금천구청</th>
+														<th class="st1">광명역</th>
+													</tr>
+												<tr>
+														<td class="st7">05:32:00</td>
+														<td class="st6">05:34:30</td>
+														<td class="st5">05:36:30</td>
+														<td class="st4">05:41:00</td>
+														<td class="st3">05:43:30</td>
+														<td class="st2">05:46:00</td>
+														<td class="st1">05:51:00</td>
+													</tr>
+												<tr>
+														<td class="st7">06:15:00</td>
+														<td class="st6">06:17:30</td>
+														<td class="st5">06:19:30</td>
+														<td class="st4">06:24:00</td>
+														<td class="st3">06:26:30</td>
+														<td class="st2">06:29:00</td>
+														<td class="st1">06:34:00</td>
+													</tr>
+												<tr>
+														<td class="st7">07:13:00</td>
+														<td class="st6">07:15:30</td>
+														<td class="st5">07:17:30</td>
+														<td class="st4">07:22:00</td>
+														<td class="st3">07:24:30</td>
+														<td class="st2">07:27:00</td>
+														<td class="st1">07:32:00</td>
+													</tr>
+												<tr>
+														<td class="st7">08:26:00</td>
+														<td class="st6">08:28:30</td>
+														<td class="st5">08:30:30</td>
+														<td class="st4">08:35:00</td>
+														<td class="st3">08:37:30</td>
+														<td class="st2">08:40:00</td>
+														<td class="st1">08:45:00</td>
+													</tr>
+												<tr>
+														<td class="st7">09:12:00</td>
+														<td class="st6">09:14:30</td>
+														<td class="st5">09:16:30</td>
+														<td class="st4">09:21:00</td>
+														<td class="st3">09:23:30</td>
+														<td class="st2">09:26:00</td>
+														<td class="st1">09:31:00</td>
+													</tr>
+												<tr>
+														<td class="st7">10:10:00</td>
+														<td class="st6">10:12:30</td>
+														<td class="st5">10:14:30</td>
+														<td class="st4">10:19:00</td>
+														<td class="st3">10:21:30</td>
+														<td class="st2">10:24:00</td>
+														<td class="st1">10:29:00</td>
+													</tr>
+												<tr>
+														<td class="st7">11:03:00</td>
+														<td class="st6">11:05:30</td>
+														<td class="st5">11:07:30</td>
+														<td class="st4">11:12:00</td>
+														<td class="st3">11:14:30</td>
+														<td class="st2">11:17:00</td>
+														<td class="st1">11:22:00</td>
+													</tr>
+												<tr>
+														<td class="st7">11:50:00</td>
+														<td class="st6">11:52:30</td>
+														<td class="st5">11:54:30</td>
+														<td class="st4">11:59:00</td>
+														<td class="st3">12:01:30</td>
+														<td class="st2">12:04:00</td>
+														<td class="st1">12:09:00</td>
+													</tr>
+												<tr>
+														<td class="st7">12:32:00</td>
+														<td class="st6">12:34:30</td>
+														<td class="st5">12:36:30</td>
+														<td class="st4">12:41:00</td>
+														<td class="st3">12:43:30</td>
+														<td class="st2">12:46:00</td>
+														<td class="st1">12:51:00</td>
+													</tr>
+												<tr>
+														<td class="st7">13:44:00</td>
+														<td class="st6">13:46:30</td>
+														<td class="st5">13:48:30</td>
+														<td class="st4">13:53:00</td>
+														<td class="st3">13:55:30</td>
+														<td class="st2">13:58:00</td>
+														<td class="st1">14:03:00</td>
+													</tr>
+												<tr>
+														<td class="st7">14:22:00</td>
+														<td class="st6">14:24:30</td>
+														<td class="st5">14:27:00</td>
+														<td class="st4">14:31:30</td>
+														<td class="st3">14:34:00</td>
+														<td class="st2">14:36:30</td>
+														<td class="st1">14:41:30</td>
+													</tr>
+												<tr>
+														<td class="st7">15:03:00</td>
+														<td class="st6">15:05:30</td>
+														<td class="st5">15:07:30</td>
+														<td class="st4">15:12:00</td>
+														<td class="st3">15:14:30</td>
+														<td class="st2">15:17:00</td>
+														<td class="st1">15:22:00</td>
+													</tr>
+												<tr>
+														<td class="st7">16:10:00</td>
+														<td class="st6">16:12:30</td>
+														<td class="st5">16:14:30</td>
+														<td class="st4">16:19:00</td>
+														<td class="st3">16:21:30</td>
+														<td class="st2">16:24:00</td>
+														<td class="st1">16:29:00</td>
+													</tr>
+												<tr>
+														<td class="st7">17:02:00</td>
+														<td class="st6">17:04:30</td>
+														<td class="st5">17:06:30</td>
+														<td class="st4">17:11:00</td>
+														<td class="st3">17:13:30</td>
+														<td class="st2">17:16:00</td>
+														<td class="st1">17:21:00</td>
+													</tr>
+												<tr>
+														<td class="st7">18:20:00</td>
+														<td class="st6">18:22:30</td>
+														<td class="st5">18:24:30</td>
+														<td class="st4">18:29:00</td>
+														<td class="st3">18:31:30</td>
+														<td class="st2">18:34:00</td>
+														<td class="st1">18:39:00</td>
+													</tr>
+												<tr>
+														<td class="st7">19:10:00</td>
+														<td class="st6">19:12:30</td>
+														<td class="st5">19:14:30</td>
+														<td class="st4">19:19:00</td>
+														<td class="st3">19:21:30</td>
+														<td class="st2">19:24:00</td>
+														<td class="st1">19:29:00</td>
+													</tr>
+												<tr>
+														<td class="st7">20:04:00</td>
+														<td class="st6">20:06:30</td>
+														<td class="st5">20:08:30</td>
+														<td class="st4">20:13:00</td>
+														<td class="st3">20:15:30</td>
+														<td class="st2">20:18:00</td>
+														<td class="st1">20:23:00</td>
+													</tr>
+												<tr>
+														<td class="st7">20:41:00</td>
+														<td class="st6">20:43:30</td>
+														<td class="st5">20:45:30</td>
+														<td class="st4">20:50:00</td>
+														<td class="st3">20:52:30</td>
+														<td class="st2">20:55:00</td>
+														<td class="st1">21:00:00</td>
+													</tr>
+												<tr>
+														<td class="st7">21:49:00</td>
+														<td class="st6">21:51:30</td>
+														<td class="st5">21:53:30</td>
+														<td class="st4">21:58:00</td>
+														<td class="st3">22:00:30</td>
+														<td class="st2">22:03:00</td>
+														<td class="st1">22:08:00</td>
+													</tr>
+												<tr>
+														<td class="st7">22:40:00</td>
+														<td class="st6">22:42:30</td>
+														<td class="st5">22:44:30</td>
+														<td class="st4">22:49:00</td>
+														<td class="st3">22:51:30</td>
+														<td class="st2">22:54:00</td>
+														<td class="st1">22:59:00</td>
+													</tr>
+											</table>
+				</div>
+						</div>
+
+		</div>
+			<div class="ui tab" data-tab="daytype2">
+
+			<div class="ui top attached two item tabular menu">
+							<a class="item" data-tab="fromto1">광명역->영등포</a>
+							<a class="item" data-tab="fromto2">영등포->광명역</a>
+						</div>
+
+			<div class="ui bottom attached segment">
+							<div class="ui tab" data-tab="fromto1">
+															<table id="ktx" class="ui unstackable striped very compact selectable table center aligned seven column">
+						<tr class="" style="font-size: smaller;">
+														<th class="st1">광명역</th>
+														<th class="st2">금천구청</th>
+														<th class="st3">독산</th>
+														<th class="st4">가산디지털</th>
+														<th class="st5">구로</th>
+														<th class="st6">신도림</th>
+														<th class="st7">영등포</th>
+													</tr>
+												<tr>
+														<td class="st1">06:30:00</td>
+														<td class="st2">06:35:30</td>
+														<td class="st3">06:38:00</td>
+														<td class="st4">06:40:30</td>
+														<td class="st5">06:45:00</td>
+														<td class="st6">06:47:00</td>
+														<td class="st7">06:49:00</td>
+													</tr>
+												<tr>
+														<td class="st1">07:47:00</td>
+														<td class="st2">07:52:30</td>
+														<td class="st3">07:55:00</td>
+														<td class="st4">07:57:30</td>
+														<td class="st5">08:02:00</td>
+														<td class="st6">08:04:00</td>
+														<td class="st7">08:06:00</td>
+													</tr>
+												<tr>
+														<td class="st1">08:18:00</td>
+														<td class="st2">08:23:30</td>
+														<td class="st3">08:26:00</td>
+														<td class="st4">08:28:30</td>
+														<td class="st5">08:33:00</td>
+														<td class="st6">08:35:00</td>
+														<td class="st7">08:37:00</td>
+													</tr>
+												<tr>
+														<td class="st1">09:38:00</td>
+														<td class="st2">09:43:30</td>
+														<td class="st3">09:46:00</td>
+														<td class="st4">09:48:30</td>
+														<td class="st5">09:53:00</td>
+														<td class="st6">09:55:00</td>
+														<td class="st7">09:57:00</td>
+													</tr>
+												<tr>
+														<td class="st1">10:13:00</td>
+														<td class="st2">10:18:30</td>
+														<td class="st3">10:21:00</td>
+														<td class="st4">10:23:30</td>
+														<td class="st5">10:28:00</td>
+														<td class="st6">10:30:00</td>
+														<td class="st7">10:32:00</td>
+													</tr>
+												<tr>
+														<td class="st1">10:57:00</td>
+														<td class="st2">11:02:30</td>
+														<td class="st3">11:05:00</td>
+														<td class="st4">11:07:30</td>
+														<td class="st5">11:12:00</td>
+														<td class="st6">11:14:00</td>
+														<td class="st7">11:16:00</td>
+													</tr>
+												<tr>
+														<td class="st1">11:50:00</td>
+														<td class="st2">11:55:30</td>
+														<td class="st3">11:58:00</td>
+														<td class="st4">12:00:30</td>
+														<td class="st5">12:05:00</td>
+														<td class="st6">12:07:00</td>
+														<td class="st7">12:09:00</td>
+													</tr>
+												<tr>
+														<td class="st1">13:00:00</td>
+														<td class="st2">13:05:30</td>
+														<td class="st3">13:08:00</td>
+														<td class="st4">13:10:30</td>
+														<td class="st5">13:15:00</td>
+														<td class="st6">13:17:00</td>
+														<td class="st7">13:19:00</td>
+													</tr>
+												<tr>
+														<td class="st1">13:41:00</td>
+														<td class="st2">13:46:30</td>
+														<td class="st3">13:49:00</td>
+														<td class="st4">13:51:30</td>
+														<td class="st5">13:56:00</td>
+														<td class="st6">13:58:00</td>
+														<td class="st7">14:00:00</td>
+													</tr>
+												<tr>
+														<td class="st1">14:27:00</td>
+														<td class="st2">14:32:30</td>
+														<td class="st3">14:35:00</td>
+														<td class="st4">14:37:30</td>
+														<td class="st5">14:42:00</td>
+														<td class="st6">14:44:00</td>
+														<td class="st7">14:46:00</td>
+													</tr>
+												<tr>
+														<td class="st1">15:14:00</td>
+														<td class="st2">15:19:30</td>
+														<td class="st3">15:22:00</td>
+														<td class="st4">15:24:30</td>
+														<td class="st5">15:29:00</td>
+														<td class="st6">15:31:00</td>
+														<td class="st7">15:33:00</td>
+													</tr>
+												<tr>
+														<td class="st1">16:00:00</td>
+														<td class="st2">16:05:30</td>
+														<td class="st3">16:08:00</td>
+														<td class="st4">16:10:30</td>
+														<td class="st5">16:15:00</td>
+														<td class="st6">16:17:00</td>
+														<td class="st7">16:19:00</td>
+													</tr>
+												<tr>
+														<td class="st1">17:17:00</td>
+														<td class="st2">17:22:30</td>
+														<td class="st3">17:25:00</td>
+														<td class="st4">17:27:30</td>
+														<td class="st5">17:32:00</td>
+														<td class="st6">17:34:00</td>
+														<td class="st7">17:36:00</td>
+													</tr>
+												<tr>
+														<td class="st1">18:21:00</td>
+														<td class="st2">18:26:30</td>
+														<td class="st3">18:29:00</td>
+														<td class="st4">18:31:30</td>
+														<td class="st5">18:36:00</td>
+														<td class="st6">18:38:00</td>
+														<td class="st7">18:40:00</td>
+													</tr>
+												<tr>
+														<td class="st1">19:33:00</td>
+														<td class="st2">19:38:30</td>
+														<td class="st3">19:41:00</td>
+														<td class="st4">19:43:30</td>
+														<td class="st5">19:48:00</td>
+														<td class="st6">19:50:00</td>
+														<td class="st7">19:52:00</td>
+													</tr>
+												<tr>
+														<td class="st1">20:10:00</td>
+														<td class="st2">20:15:30</td>
+														<td class="st3">20:18:00</td>
+														<td class="st4">20:20:30</td>
+														<td class="st5">20:25:00</td>
+														<td class="st6">20:27:00</td>
+														<td class="st7">20:29:00</td>
+													</tr>
+												<tr>
+														<td class="st1">21:18:00</td>
+														<td class="st2">21:23:30</td>
+														<td class="st3">21:26:00</td>
+														<td class="st4">21:28:30</td>
+														<td class="st5">21:33:00</td>
+														<td class="st6">21:35:00</td>
+														<td class="st7">21:37:00</td>
+													</tr>
+												<tr>
+														<td class="st1">22:07:00</td>
+														<td class="st2">22:12:30</td>
+														<td class="st3">22:15:00</td>
+														<td class="st4">22:17:30</td>
+														<td class="st5">22:22:30</td>
+														<td class="st6">22:24:30</td>
+														<td class="st7">22:26:30</td>
+													</tr>
+												<tr>
+														<td class="st1">22:43:00</td>
+														<td class="st2">22:48:30</td>
+														<td class="st3">22:51:00</td>
+														<td class="st4">22:53:30</td>
+														<td class="st5">22:58:00</td>
+														<td class="st6">23:00:00</td>
+														<td class="st7">23:02:00</td>
+													</tr>
+												<tr>
+														<td class="st1">23:43:00</td>
+														<td class="st2">23:48:30</td>
+														<td class="st3">23:51:00</td>
+														<td class="st4">23:53:30</td>
+														<td class="st5">23:58:00</td>
+														<td class="st6">00:00:00</td>
+														<td class="st7">00:02:00</td>
+													</tr>
+											</table>
+				</div>
+							<div class="ui tab" data-tab="fromto2">
+															<table id="ktx" class="ui unstackable striped very compact selectable table center aligned seven column">
+						<tr class="" style="font-size: smaller;">
+														<th class="st7">영등포</th>
+														<th class="st6">신도림</th>
+														<th class="st5">구로</th>
+														<th class="st4">가산디지털</th>
+														<th class="st3">독산</th>
+														<th class="st2">금천구청</th>
+														<th class="st1">광명역</th>
+													</tr>
+												<tr>
+														<td class="st7">05:32:00</td>
+														<td class="st6">05:34:30</td>
+														<td class="st5">05:36:30</td>
+														<td class="st4">05:41:00</td>
+														<td class="st3">05:43:30</td>
+														<td class="st2">05:46:00</td>
+														<td class="st1">05:51:00</td>
+													</tr>
+												<tr>
+														<td class="st7">06:15:00</td>
+														<td class="st6">06:17:30</td>
+														<td class="st5">06:19:30</td>
+														<td class="st4">06:24:00</td>
+														<td class="st3">06:26:30</td>
+														<td class="st2">06:29:00</td>
+														<td class="st1">06:34:00</td>
+													</tr>
+												<tr>
+														<td class="st7">07:13:00</td>
+														<td class="st6">07:15:30</td>
+														<td class="st5">07:17:30</td>
+														<td class="st4">07:22:00</td>
+														<td class="st3">07:24:30</td>
+														<td class="st2">07:27:00</td>
+														<td class="st1">07:32:00</td>
+													</tr>
+												<tr>
+														<td class="st7">08:26:00</td>
+														<td class="st6">08:28:30</td>
+														<td class="st5">08:30:30</td>
+														<td class="st4">08:35:00</td>
+														<td class="st3">08:37:30</td>
+														<td class="st2">08:40:00</td>
+														<td class="st1">08:45:00</td>
+													</tr>
+												<tr>
+														<td class="st7">09:12:00</td>
+														<td class="st6">09:14:30</td>
+														<td class="st5">09:16:30</td>
+														<td class="st4">09:21:00</td>
+														<td class="st3">09:23:30</td>
+														<td class="st2">09:26:00</td>
+														<td class="st1">09:31:00</td>
+													</tr>
+												<tr>
+														<td class="st7">10:10:00</td>
+														<td class="st6">10:12:30</td>
+														<td class="st5">10:14:30</td>
+														<td class="st4">10:19:00</td>
+														<td class="st3">10:21:30</td>
+														<td class="st2">10:24:00</td>
+														<td class="st1">10:29:00</td>
+													</tr>
+												<tr>
+														<td class="st7">11:03:00</td>
+														<td class="st6">11:05:30</td>
+														<td class="st5">11:07:30</td>
+														<td class="st4">11:12:00</td>
+														<td class="st3">11:14:30</td>
+														<td class="st2">11:17:00</td>
+														<td class="st1">11:22:00</td>
+													</tr>
+												<tr>
+														<td class="st7">11:50:00</td>
+														<td class="st6">11:52:30</td>
+														<td class="st5">11:54:30</td>
+														<td class="st4">11:59:00</td>
+														<td class="st3">12:01:30</td>
+														<td class="st2">12:04:00</td>
+														<td class="st1">12:09:00</td>
+													</tr>
+												<tr>
+														<td class="st7">12:32:00</td>
+														<td class="st6">12:34:30</td>
+														<td class="st5">12:36:30</td>
+														<td class="st4">12:41:00</td>
+														<td class="st3">12:43:30</td>
+														<td class="st2">12:46:00</td>
+														<td class="st1">12:51:00</td>
+													</tr>
+												<tr>
+														<td class="st7">13:44:00</td>
+														<td class="st6">13:46:30</td>
+														<td class="st5">13:48:30</td>
+														<td class="st4">13:53:00</td>
+														<td class="st3">13:55:30</td>
+														<td class="st2">13:58:00</td>
+														<td class="st1">14:03:00</td>
+													</tr>
+												<tr>
+														<td class="st7">14:22:00</td>
+														<td class="st6">14:24:30</td>
+														<td class="st5">14:27:00</td>
+														<td class="st4">14:31:30</td>
+														<td class="st3">14:34:00</td>
+														<td class="st2">14:36:30</td>
+														<td class="st1">14:41:30</td>
+													</tr>
+												<tr>
+														<td class="st7">15:03:00</td>
+														<td class="st6">15:05:30</td>
+														<td class="st5">15:07:30</td>
+														<td class="st4">15:12:00</td>
+														<td class="st3">15:14:30</td>
+														<td class="st2">15:17:00</td>
+														<td class="st1">15:22:00</td>
+													</tr>
+												<tr>
+														<td class="st7">16:10:00</td>
+														<td class="st6">16:12:30</td>
+														<td class="st5">16:14:30</td>
+														<td class="st4">16:19:00</td>
+														<td class="st3">16:21:30</td>
+														<td class="st2">16:24:00</td>
+														<td class="st1">16:29:00</td>
+													</tr>
+												<tr>
+														<td class="st7">17:02:00</td>
+														<td class="st6">17:04:30</td>
+														<td class="st5">17:06:30</td>
+														<td class="st4">17:11:00</td>
+														<td class="st3">17:13:30</td>
+														<td class="st2">17:16:00</td>
+														<td class="st1">17:21:00</td>
+													</tr>
+												<tr>
+														<td class="st7">18:20:00</td>
+														<td class="st6">18:22:30</td>
+														<td class="st5">18:24:30</td>
+														<td class="st4">18:29:00</td>
+														<td class="st3">18:31:30</td>
+														<td class="st2">18:34:00</td>
+														<td class="st1">18:39:00</td>
+													</tr>
+												<tr>
+														<td class="st7">19:10:00</td>
+														<td class="st6">19:12:30</td>
+														<td class="st5">19:14:30</td>
+														<td class="st4">19:19:00</td>
+														<td class="st3">19:21:30</td>
+														<td class="st2">19:24:00</td>
+														<td class="st1">19:29:00</td>
+													</tr>
+												<tr>
+														<td class="st7">20:04:00</td>
+														<td class="st6">20:06:30</td>
+														<td class="st5">20:08:30</td>
+														<td class="st4">20:13:00</td>
+														<td class="st3">20:15:30</td>
+														<td class="st2">20:18:00</td>
+														<td class="st1">20:23:00</td>
+													</tr>
+												<tr>
+														<td class="st7">20:41:00</td>
+														<td class="st6">20:43:30</td>
+														<td class="st5">20:45:30</td>
+														<td class="st4">20:50:00</td>
+														<td class="st3">20:52:30</td>
+														<td class="st2">20:55:00</td>
+														<td class="st1">21:00:00</td>
+													</tr>
+												<tr>
+														<td class="st7">21:49:00</td>
+														<td class="st6">21:51:30</td>
+														<td class="st5">21:53:30</td>
+														<td class="st4">21:58:00</td>
+														<td class="st3">22:00:30</td>
+														<td class="st2">22:03:00</td>
+														<td class="st1">22:08:00</td>
+													</tr>
+												<tr>
+														<td class="st7">22:40:00</td>
+														<td class="st6">22:42:30</td>
+														<td class="st5">22:44:30</td>
+														<td class="st4">22:49:00</td>
+														<td class="st3">22:51:30</td>
+														<td class="st2">22:54:00</td>
+														<td class="st1">22:59:00</td>
+													</tr>
+											</table>
+				</div>
+						</div>
+
+		</div>
+		</div>
+	
+	<!--
+	<div class="ui hidden divider"></div>
+	-->
+
+	<div class="ui vertical _basic segment left floated">
+	출처: <a href="http://www.letskorail.com/ebizcom/cs/guide/guide/guide11.do">코레일 - 열차운임 및 시간표</a>
+	</div>
+
+</div>
+</center>
+
+<script>
+$('.tabular.menu>.item:first-child, .segment>.tab:first-child').addClass('active');
+$('.tabular.menu .item').tab();
+</script>
+	
+
+		<div class="debug"></div>
+		</div>
+</body>
+</html>
